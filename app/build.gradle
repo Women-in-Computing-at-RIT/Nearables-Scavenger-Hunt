@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "com.wic.projects.scavengerhunt"
+        applicationId "com.RochesterInstituteOfTechnology.CampusSprawlFdp"
         minSdkVersion 18
         targetSdkVersion 23
         versionCode 1
@@ -21,11 +21,9 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:23.0.1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.android.support:design:23.1.0'
 
-    // add the following line, and replace "0.8.7" with the latest version
-    // of Estimote Android SDK; you'll find the latest version number on:
-    //   https://github.com/Estimote/Android-SDK/releases
-    compile 'com.estimote:sdk:0.8.8@aar'
-
+    compile 'com.estimote:sdk:0.9.4@aar'
 }
